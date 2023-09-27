@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Review pending changes using git-diff
  */
