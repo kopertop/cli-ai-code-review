@@ -1,6 +1,6 @@
 {
   "name": "cli-ai-code-review",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CLI tool to review code using OpenAI GPT",
   "type": "module",
   "main": "code-review.js",
