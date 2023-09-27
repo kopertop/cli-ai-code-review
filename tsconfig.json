@@ -1,0 +1,16 @@
+{
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"files": [
+		"src/cli.ts"
+	],
+	"compilerOptions": {
+		"outDir": "dist",
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+		"noImplicitAny": false,
+		"typeRoots": [
+			"./node_modules/@types",
+			"./types/"
+		]
+	}
+}

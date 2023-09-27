@@ -1,0 +1,28 @@
+{
+  "name": "cli-ai-code-review",
+  "version": "0.0.1",
+  "description": "",
+  "main": "code-review.js",
+  "bin": "./dist/cli.mjs",
+  "scripts": {
+    "code-review": "npx tsx code-review.ts"
+  },
+  "keywords": [
+    "openai",
+    "code",
+    "ai"
+  ],
+  "author": "Chris Moyer <kopertop@gmail.com>",
+  "license": "THE UNLICENSE",
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.1",
+    "@types/node": "^20.7.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cli-markdown": "^3.0.5",
+    "openai": "^4.10.0",
+    "simple-git": "^3.20.0"
+  }
+}
