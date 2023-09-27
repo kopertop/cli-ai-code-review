@@ -1,18 +1,27 @@
 {
   "name": "cli-ai-code-review",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.4",
+  "description": "CLI tool to review code using OpenAI GPT",
+  "type": "module",
   "main": "code-review.js",
-  "bin": "./dist/cli.mjs",
+  "bin": "./dist/cli.js",
   "scripts": {
-    "code-review": "npx tsx code-review.ts"
+    "build": "tsc",
+    "code-review": "npx tsx src/cli.ts"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./dist/cli.js"
   },
   "keywords": [
     "openai",
     "code",
     "ai"
   ],
-  "author": "Chris Moyer <kopertop@gmail.com>",
+  "author": {
+    "name": "Chris Moyer",
+    "email": "kopertop@gmail.com"
+  },
   "license": "THE UNLICENSE",
   "devDependencies": {
     "@tsconfig/node16": "^16.1.1",
