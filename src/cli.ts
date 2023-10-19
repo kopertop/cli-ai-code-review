@@ -16,7 +16,9 @@ async function main() {
 	const git = simpleGit({
 		baseDir: process.cwd(),
 	});
-	const diff = (await git.diff()).trim();
+	// Look at only staged changes, so we're making sure we're reviewing what's going to be committed
+	// This also helps to make sure added files are included
+	const diff = (await git.diff(['--staged'])).trim();
 	if (!diff.length) {
 		console.log('No Changes');
 		return;

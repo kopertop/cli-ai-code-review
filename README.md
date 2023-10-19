@@ -6,10 +6,10 @@ Make sure you have at least Node18 and `npx` in your path. Sign up for an OpenAP
 
 # Usage
 
-With changes in your current git directory, run:
+With changes staged in your current git directory, run:
 
 ```
 npx cli-ai-code-review
 ```
 
-This will submit the output of a `git diff` to ChatGPT
+This will submit the output of a `git diff --staged` to ChatGPT
